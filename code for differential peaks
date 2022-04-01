@@ -241,6 +241,6 @@ cat mm10.refseq.bed | awk '{ if ($6 == "+") { print $1,$2-'$upstream', $2+'$down
 sbatch FilterBedFiles.sh
 #3. plot with upset and deeptools
 sbatch EnhancerPromoterUpsetRplots.sh
-#Makes heatmaps and profiles over each bed file output from upset plot
+##Makes heatmaps and profiles over each bed file output from upset plot
 
 sbatch upsetpeaks_Deeptool_Plots.sh
